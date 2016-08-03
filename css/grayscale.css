@@ -262,13 +262,14 @@ a:focus {
   color: #FF4081;
   background-color: transparent;
 }
-.btn-default:hover,
-.btn-default:focus {
+
+.btn-default:hover {
   border: 1px solid #FF4081;
   outline: none;
   color: black;
   background-color: #FF4081;
 }
+
 ul.banner-social-buttons {
   margin-top: 0;
 }
