@@ -1,0 +1,91 @@
+.project {
+	border: 1px solid #1976D2;
+	background-color: inherit;
+	width: 30%;
+	text-align: center;
+	display: inline-block;
+	float: none;
+	margin-bottom: 40px;
+	padding: 0 10px;
+}
+
+@media (max-width: 1000px) {
+	.project {
+		width: 100%;
+		max-width: 351px;
+		vertical-align: middle;
+	}
+
+}
+
+@media (min-width: 1001px) {
+	.project {
+		width: 30%;
+		vertical-align: top;
+	}
+
+	.middle {
+		margin-left: 4.5%;
+		margin-right: 4.5%;
+	}
+
+}
+
+.project-header {
+	text-align: center;
+}
+
+.small-text {
+	font-size: 16px;
+}
+
+.award {
+	font-size: 18px;
+	border-bottom: 1px solid #1976D2;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.github-button {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.no-bottom {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.project-description {
+	text-align: center;
+	border-bottom: 1px solid #1976D2;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+
+.built-with {
+	border-bottom: 1px solid #1976D2;
+	padding-bottom: 10px;
+}
+
+.row-centered {
+	text-align: center;
+}
+
+.col-centered {
+	display: inline-block;
+	float: none;
+	text-align: left;
+}
+
+.project-header {
+	border-bottom: 1px solid #1976D2;
+	margin-bottom: 10px;
+}
+
+.credits {
+	margin: auto;
+	color: #555555;
+}
