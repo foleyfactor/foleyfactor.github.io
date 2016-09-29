@@ -1,7 +1,7 @@
 var activeProjects = false;
 
 function scrolling() {
-	if (!activeProjects && $($('.navbar-nav li')[2]).hasClass('active')) {
+	if (!activeProjects && ($($('.navbar-nav li')[1]).hasClass('active') || $($('.navbar-nav li')[2]).hasClass('active'))) {
 		activeProjects = true;
 		animateProjects();
 	}
@@ -9,7 +9,7 @@ function scrolling() {
 
 $(document).ready(function() {
 	if (jQuery().velocity && jQuery().scramble) {
-		$('#nameplate').scramble('ALE EL FOXY', {initialDelay: 3200, xDuration: 1000, yDuration: 600, align: 'center', wordList: ['AXLE FOLEY'], infinite: true});
+		$('#nameplate').text('LXEO AEYLF').scramble('ALEX FOLEY', {initialDelay: 1500, yDuration: 600, xDuration: 1000, align: 'center'});//, wordList: ['AXLE FOLEY'], infinite: true});
 	}
 });
 

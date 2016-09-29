@@ -284,14 +284,16 @@ function createMovingList( parent, to, map ) {
 					progress: function(elements, percentComplete, timeRemaining, timeStart) {
 						if (percentComplete == 1 && !returned) {
 								returned = true;
-								$element.empty().text(to);
 								setTimeout(function() {
 									if (settings.wordList.length > 0 && settings.wordIndex < settings.loopCount) {
 										var newIndex = (settings.wordIndex+1)%settings.wordList.length;
+										$element.empty().text(to);
 										return $element.scramble(settings.wordList[newIndex], {wordList: settings.wordList, wordIndex: settings.wordIndex+1, loopCount: settings.loopCount, align: settings.align});
 									} else if (settings.loopCount > 1 && settings.wordIndex < settings.loopCount-2){
+										$element.empty().text(to);
 										return $element.scramble(from, {loopCount: settings.loopCount, wordIndex: settings.wordIndex+1, align: settings.align});
 									} else if (settings.wordIndex < settings.loopCount-2) {
+										$element.empty().text(to);
 										return $element.scramble(from, {loopCount: settings.loopCount, wordIndex: settings.wordIndex+1, align: settings.align});
 									} else {
 										return $element;
