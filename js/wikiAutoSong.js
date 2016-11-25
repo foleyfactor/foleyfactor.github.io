@@ -56,7 +56,7 @@ $(document).ready(function() {
 		break;
 
 		case 11:
-		if (day > 11) {
+		if (day < 11) {
 			playlistId = guiltyPlaylist;
 		} else {
 			playlistId = xmasPlaylist;
