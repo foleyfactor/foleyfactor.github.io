@@ -9,8 +9,7 @@ var fire = false;
 
 function checkfire(){
 	let maxV = JSON.parse(httpGet("https://api.particle.io/v1/devices/34001e001347343339383037/maxv?access_token=8b08209967c1f21b0acdbefabb634028eef09b85")).result;
-	let maxI = JSON.parse(httpGet("https://api.particle.io/v1/devices/34001e001347343339383037/maxi?access_token=8b08209967c1f21b0acdbefabb634028eef09b85")).result;
-  if (maxV > 1500){
+  if (maxV > 2000){
     document.getElementById("fire").classList.add("visible");
     document.getElementById("fire").classList.remove("invisible");
     document.getElementById("thumb").classList.add("invisible");
