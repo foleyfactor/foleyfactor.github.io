@@ -1,0 +1,27 @@
+function httpGet(theUrl){
+  var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send();
+    return xmlHttp.responseText;
+}
+
+function checkfire(){
+  if(httpGet("https://foleyfactor.github.io/resume.pdf").result == "1"){
+    document.getElementById("fire").classList.add("visible");
+    document.getElementById("fire").classList.remove("invisible");
+    document.getElementById("thumb").classList.add("invisible");
+    document.getElementById("thumb").classList.remove("visible");
+  } else {
+    document.getElementById("thumb").classList.add("visible");
+    document.getElementById("thumb").classList.remove("invisible");
+    document.getElementById("fire").classList.add("invisible");
+    document.getElementById("fire").classList.remove("visible");
+  }
+
+  let str = "";
+  str += JSON.parse(httpGet("https://api.particle.io/v1/devices/34001e001347343339383037/maxv?access_token=8b08209967c1f21b0acdbefabb634028eef09b85")).result + " " + JSON.parse(httpGet("https://api.particle.io/v1/devices/34001e001347343339383037/maxi?access_token=8b08209967c1f21b0acdbefabb634028eef09b85")).result;
+  if (str)
+    document.getElementById("data").innerHTML = str;
+}
+
+setInterval(checkfire,250);

@@ -1,0 +1,16 @@
+p {
+  font-size: 120px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+.gif{
+  background-image: url("fire.gif");
+  background-size: cover;
+}
+.invisible{
+  display: none;
+  visibility: hidden;
+}
+.white{
+  color:white;
+}
