@@ -21,7 +21,7 @@ function checkfire(){
     document.getElementById("fire").classList.add("invisible");
     document.getElementById("fire").classList.remove("visible");
   }
-  document.getElementById("data").innerHTML = maxI + " " + maxV;
+  document.getElementById("data").innerHTML = maxV;
 }
 
 setInterval(() => {
