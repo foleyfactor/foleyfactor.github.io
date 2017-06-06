@@ -14,8 +14,31 @@ var template = `<div class="project middle panel">
                         </div> 
                     </div>`
 
+var version = 1;
+
+function getCookie(cookie) {
+	let allCookies = decodeURIComponent(document.cookie).split(";");
+	for (let i = 0; i<allCookies.length; i++) {
+		let curr = allCookies[i];
+		while (curr.substring(0) === ' ') curr = curr.substring(1);
+		if (curr.indexOf(cookie) === 0) return curr.substring(cookie.length+1);
+	}
+	return "";
+}
+
+function checkVersion() {
+	if (getCookie("__fvsn") !== version.toString()) {
+		let d = new Date();
+		d.setTime(d.getTime() + (10*365*24*60*60*1000));
+		document.cookie = "__fvsn=" + version + "; expires=" + d.toUTCString() + "; path=/;";
+		console.log("not on current version... updating.");
+		window.location.reload(true);
+	}
+}
+
 $(document).ready(() => {
 	console.log("setup");
+	checkVersion();
 	let count = 1;
 	$root = $('#project-container');
 	for (project of projects) {
