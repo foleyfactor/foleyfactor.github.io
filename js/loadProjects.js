@@ -14,7 +14,7 @@ var template = `<div class="project middle panel">
                         </div> 
                     </div>`
 
-var version = 2;
+var version = 1.1;
 
 function getCookie(cookie) {
 	let allCookies = decodeURIComponent(document.cookie).split(";");
