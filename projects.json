@@ -1,0 +1,56 @@
+projects = [
+	{
+		"title": "Signbot",
+		"award": true,
+		"award-text": "1st place at McHacks 2017!",
+		"description": "Signbot is a robotic, voice-controlled sign language translator and hand mirrorer. Users can say phrases that they would like to be translated to sign language and the hands will sign it. Alternatively, translators can remotely control the hands to communicate with deaf persons from anywhere.",
+		"technologies": ["Arduino", "Node.js", "Hardware Components", "Wood"],
+		"github-link":  "https://github.com/toastify/signbot-talk",
+		"medium-link": "https://medium.com/@foleyfactor/an-unspoken-language-48e955f9caa"
+	},
+	{
+		"title": "Sandwich-o-matic",
+		"award": true,
+		"award-text": "Finalist, Best Hardware Hack at ECHacks!",
+		"description": "Sandwich-o-matic is an automated IOT voice-controlled sandwich maker. Users simply say \"make me a sandwich with [toppings] and the machine toasts the bread, dispenses the toppings, and creates the requested sandwich.\"",
+		"technologies": ["Arduino/Photon", "Hardware Components", "Black & Decker Toaster"],
+		"github-link": "https://github.com/toastify/toastserv",
+		"medium-link": "https://stories.mlh.io/reinventing-the-sandwich-35b106ba3be"
+	},
+	{
+		"title": "timber",
+		"award": true,
+		"award-text": "1st place at Waterloo Codefest!",
+		"description": "timber is an app that connects citizens through city-owned trees. Users can \"treetup\" (meet-up at a tree), vote on their favourite trees, and report dead or dangerous trees to the city.",
+		"technologies": ["HTML", "CSS", "Javascript/JQuery", "Intel XDK", "Firebase", "Geofire"],
+		"github-link": "https://github.com/johnafish/timber",
+		"medium-link": null
+	},
+	{
+		"title": "Intercode",
+		"award": true,
+		"award-text": "Top 100 at hack.summit() 2016!",
+		"description": "Intercode is a web application that allows users to learn how to program in Python, based on their interests. Users tell the application what they're interested in and Intercode tailors the lessons to these interests.",
+		"technologies": ["HTML", "CSS", "Javascript/JQuery", "Firebase"],
+		"github-link": "https://github.com/foleyfactor/Intercode",
+		"medium-link": null
+	},
+	{
+		"title": "LEAP",
+		"award": false,
+		"award-text": "",
+		"description": "LEAP is an Android application that allows users to use their phones in a similar way to leap motion. The app uses the phone's front camera to track the user's hands and then sends commands to a computer, based on their gestures.",
+		"technologies": ["Android", "OpenCV", "Firebase"],
+		"github-link": "https://github.com/foleyfactor/LEAP",
+		"medium-link": null
+	},
+	{
+		"title": "CheqOut",
+		"award": false,
+		"award-text": "",
+		"description": "CheqOut is an Android app that relieves the pains of waiting in lines. Scan the items as you put them in your cart, pay with your card, and show the receipt to an attendant as you walk out the door.",
+		"technologies": ["Android", "Firebase"],
+		"github-link": "https://github.com/foleyfactor/CheqOut",
+		"medium-link": null
+	}
+]
