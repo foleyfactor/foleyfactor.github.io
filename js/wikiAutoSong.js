@@ -7,10 +7,10 @@ var happyBirthdayPlaylist = 'PLrUXPUxsJYMNAG1VGIte2uoPo2lel2znh';
 var APIKey = 'AIzaSyCgZbGru9U_roOkYGqdI6Tl1GmXA69NfkM';
 
 //Plays the music based on the time of year, according to the chart below:
-//November 12 - January 1: xmas music;
-//January 2 - March 15: movie songs;
+//November 1 - December 31: xmas music;
+//January 1 - March 15: movie songs;
 //March 16 - July 31: classical music;
-//August 1 - November 11: guilty pleasure music
+//August 1 - October 31: guilty pleasure music
 
 var d = new Date();
 var month = d.getMonth() + 1;
@@ -19,11 +19,7 @@ var day = d.getDate();
 $(document).ready(function() {
 	switch(month) {
 		case 1:
-		if (day > 1) {
-			playlistId = moviePlaylist;
-		} else {
-			playlistId = xmasPlaylist;
-		}
+		playlistId = moviePlaylist;
 		break;
 
 		case 2:
@@ -56,13 +52,6 @@ $(document).ready(function() {
 		break;
 
 		case 11:
-		if (day < 11) {
-			playlistId = guiltyPlaylist;
-		} else {
-			playlistId = xmasPlaylist;
-		}
-		break;
-
 		case 12:
 		playlistId = xmasPlaylist;
 		break;
